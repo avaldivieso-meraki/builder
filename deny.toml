@@ -9,7 +9,9 @@ all-features = true
 version = 2
 yanked = "deny"
 # Every ignore needs an id and the reason it is acceptable.
-ignore = []
+ignore = [
+  { id = "RUSTSEC-2026-0600", reason = "kube-client's openssl-tls connector is not built: kube uses rustls-tls and openssl is banned" },
+]
 
 [licenses]
 version = 2
